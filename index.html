@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fanha — Privacy & Digital Minimalism</title>
+<meta name="description" content="Fanha: tips privacy, digital minimalism, dan SEO. Cepat, minimal, dan ramah mobile.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* Critical minimal CSS - mobile-first, super small */
+:root{
+  --bg:#ffffff; --fg:#0b1220; --muted:#6b7280; --accent:#0b84ff; --maxw:900px;
+  --radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;}
+.container{max-width:var(--maxw);margin:0 auto;padding:20px;}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:700;font-size:1.1rem;letter-spacing:0.2px}
+nav{font-size:0.95rem}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+h1{font-size:1.6rem;margin-bottom:8px}
+h2{font-size:1.05rem;margin:18px 0 8px}
+.post-list{list-style:none;margin-top:10px;padding-left:0}
+.post-list a{display:block;padding:10px;border-radius:8px;color:var(--accent);text-decoration:none}
+.post-list a:hover{background:#f3f4f6}
+.card{background:#fff;border-radius:var(--radius);padding:16px;box-shadow:0 1px 0 rgba(11,17,32,0.04)}
+meta[name="theme-color"]{content:var(--bg)}
+footer{margin-top:28px;padding:18px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+
+/* responsive */
+@media(min-width:760px){
+  body{padding:24px 0}
+  .brand{font-size:1.2rem}
+  h1{font-size:2rem}
+  nav a{margin-left:20px}
+}
+</style>
+</head>
+<body>
+<main class="container">
+  <header>
+    <div class="brand">Fanha</div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang</a>
+    </nav>
+  </header>
+
+  <section class="card" aria-labelledby="latest">
+    <h1 id="latest">Artikel Terbaru</h1>
+    <p style="color:var(--muted);margin-bottom:12px">Ringkas, aplikatif, dan fokus pada privacy & digital minimalism.</p>
+    <ul class="post-list" role="list">
+      <li><a href="posts/artikel-1.html">Kenapa Digital Minimalism Penting</a></li>
+    </ul>
+  </section>
+
+  <section style="margin-top:18px">
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="posts/artikel-1.html" class="card" style="flex:1;min-width:220px;text-decoration:none;color:inherit;">
+        <h2>Kenapa Digital Minimalism Penting</h2>
+        <p style="color:var(--muted);font-size:0.95rem">Cara sederhana kurangi distraksi dan hidup lebih fokus.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Fanha — Built fast, stay private.
+  </footer>
+</main>
+</body>
+</html>
