@@ -1,7 +1,10 @@
+cat > about.md << 'EOF'
 ---
 layout: default
 title: About
 ---
 
-Halo, saya Fanha.  
-Blog ini berisi tulisan seputar privacy, digital minimalism, AI, dan produk digital yang bermanfaat.
+# Tentang Fanha
+
+Fanha adalah ruang belajar digital minimalism, privacy, dan produk digital.
+EOF
