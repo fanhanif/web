@@ -1,19 +1,21 @@
+cat > index.md << 'EOF'
 ---
 layout: default
 title: Home
 ---
 
-# Selamat datang di Fanha
+# Selamat Datang di Fanha
 
-Ini adalah blog tentang privacy, digital minimalism, dan produk digital.
+Minimalis. Cepat. Bermanfaat.
+
+## Produk Digital
+- [Ebook Prompt & Tools AI](https://link-ebook-ai.com)
+- [Ebook Doa Sehari-hari](https://link-ebook-doa.com)
 
 ## Artikel Terbaru
 <ul>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%d %B %Y" }})</li>
+  {% for post in site.posts limit:5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## Produk Digital
-- [Ebook Prompt & Tools AI](https://link-checkout-ai.com)
-- [Ebook Doa Sehari-hari](https://link-checkout-doa.com)
+EOF
